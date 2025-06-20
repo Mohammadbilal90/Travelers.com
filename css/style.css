@@ -307,10 +307,10 @@ nav ul li a:hover {
     background-color: rgb(12, 60, 96);
     color: #ffffff;
 }
-/* .messege button:hover{
+.messege button:hover{
     background-color: rgb(12, 105, 175);
     transition: 0.5s;
-} */
+}
 .messege button a{
     text-decoration: none;   
 }
