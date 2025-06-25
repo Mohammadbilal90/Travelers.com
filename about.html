@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <title>Travelers.com</title>
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="logo">
-            <h1><a href="#">TRAVELERS</a></h1>
+            <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
         <nav>
             <ul>
@@ -24,32 +27,121 @@
             </ul>
         </nav>
     </header>
-   
+
     <main>
-        <section>
+        <section class="about-section">
             <h1 class="aboutus-h1">ABOUT US</h1>
-            <div class="about-content">
-               <div class="who-we-w-are">
-                 <h1>Who We Are</h1>
-                <p>We are passionate travekers who believe that every journey leaves with unforgettable
-                    memories our goals is to inspire and guide fellow explorers to discover the beauty 
-                    of the world. </p>
-               </div>
-                 <div class="our-mission">
-                    <h1>Our Mission</h1>
-                    <p>To make travel easier, affordable, and more exiting for everyone ___ from first time Travellers to second Adventures.</p>
-                 </div>
-                 <div class="what-we-do">
-                     <h1>What We DO</h1>
-                     <ul>
-                        <li>Provide expert travel tips and destination guides</li>
-                        <li>Curate unique travel experiences</li>
-                        <li>Help you plan perfect itineraries</li>
-                        <li>Share real travel stories and insights</li>
-                     </ul>
-                 </div>
+            <div class="main-section">
+                <div class="about-content">
+                    <div class="who-we-w-are">
+                        <h1>Who We Are</h1>
+                        <p>We are passionate travelers who believe that every journey leaves unforgettable
+                            memories. Our goal is to inspire and guide fellow explorers to discover the beauty
+                            of the world.</p>
+                    </div>
+                    <div class="our-mission">
+                        <h1>Our Mission</h1>
+                        <p>To make travel easier, affordable, and more exciting for everyone — from first-time
+                            travellers to seasoned adventurers.</p>
+                    </div>
+                    <div class="what-we-do">
+                        <h1>What We Do</h1>
+                        <ul>
+                            <li>Provide expert travel tips and destination guides</li>
+                            <li>Curate unique travel experiences</li>
+                            <li>Help you plan perfect itineraries</li>
+                            <li>Share real travel stories and insights</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
+
+
+        <section class="all-five-cards">
+            <div class="ser-pro">
+
+                <div class="services three-cards">
+                    <h1>Turkey</h1>
+                    <P>We are travel Istanbul turkey in 2021.<br>
+                        its a beautiful journey.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="projects three-cards">
+                    <h1>Austrailia</h1>
+                    <P>We are travel Melbourne Austrailia in 2018. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="clients three-cards">
+                    <h1>Japan</h1>
+                    <P>We are travel Tokyo Japan in 2016. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="clients three-cards">
+                    <h1>Canada</h1>
+                    <P>We are travel Toronto Canada in 2023. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="clients three-cards">
+                    <h1>Dubai</h1>
+                    <P>We are travel Dubai in 2013. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="clients three-cards">
+                    <h1>England</h1>
+                    <P>We are travel London England in 2009. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+                <div class="clients three-cards">
+                    <h1>Qatar</h1>
+                    <P>We are travel Doha Qatar in 2025. <br>
+                        aevy monster on the earth.</P>
+                    <div class="more-info"><button>More Info</button></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div id="map" style="height: 400px;"></div>
+        </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p>123 Main Street,<br>Karachi, Pakistan<br>ZIP: 74000</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-square-twitter"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/about.js"></script>
 </body>
+
 </html>
