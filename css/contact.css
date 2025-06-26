@@ -15,9 +15,10 @@ header{
     color: #fff;   
     display: flex; 
     z-index: 1;
+    height: 72px;
 }
 .logo{
-    padding: 10px 80px;
+    padding: 0px 80px;
     font-size: 19px;
     color: #fff;
     text-decoration: none;
@@ -27,7 +28,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 38%;
+    margin-left: 30%;
 }
 a {
     text-decoration: none;

@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 38%;
+    margin-left: 25%;
 }
 a {
     text-decoration: none;
@@ -395,7 +395,12 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
-
+.socials{
+  display: flex;
+}
+.socials li {
+ padding-inline: 5px;
+}
 
 
 header {
