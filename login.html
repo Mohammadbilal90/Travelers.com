@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">    
+    <link rel="stylesheet" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/images/logo-tab.png">
     <title>Travellers.com</title>
 </head>
+
 <body>
-     <header>
+    <header>
         <div class="logo">
             <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
@@ -23,10 +27,74 @@
             </ul>
         </nav>
     </header>
-     <main>
-        <section>
-            <h1>login</h1>
+    <main>
+        <section class="project-section">
+            <h1 class="project-h1">login</h1>
         </section>
-     </main>
+
+        <section class="login-section">
+            <div class="login-box">
+                <h2>Welcome Back, Traveller!</h2>
+                <p>Please login to access your account.</p>
+
+                <form class="login-form">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required />
+                    </div>
+
+                    <div class="form-options">
+                        <label><input type="checkbox" /> Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">Login</button>
+
+                    <div class="register-link">
+                        Don't have an account? <a href="#">Sign up</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p>123 Main Street,<br>Karachi, Pakistan<br>ZIP: 74000</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Socials</h3>
+                <ul class="socials">
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                    <li><i class="fa-brands fa-square-twitter"></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Centric.dxb All rights reserved.</p>
+    </div>
 </body>
+
 </html>

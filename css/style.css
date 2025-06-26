@@ -350,6 +350,10 @@ nav ul li a:hover {
     margin-top: 5%;
 }
 
+.overflowHidden {
+    overflow: hidden;
+}
+
 .footer {
   background-color: #06243a;
   color: #fff;
