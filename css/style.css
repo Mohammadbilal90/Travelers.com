@@ -61,6 +61,10 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
+.nav-link.active {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+}
 
 
 .first-section{

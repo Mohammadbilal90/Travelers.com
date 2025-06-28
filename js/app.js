@@ -25,3 +25,18 @@ function printNumbers() {
 }
 
 printNumbers(); // Call the function
+
+
+
+
+
+
+
+
+    const links = document.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        if (link.href === window.location.href || link.href === window.location.origin + window.location.pathname) {
+            link.classList.add('active');
+        }
+    });
+
