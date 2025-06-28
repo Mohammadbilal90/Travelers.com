@@ -27,7 +27,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 38%;
+    margin-left: 30%;
 }
 a {
     text-decoration: none;
@@ -57,17 +57,44 @@ nav ul li a:hover {
 }
 
 .aboutus-h1 {
-    margin-top: 110px;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 50px;
-    color: #111;
-    font-weight: bold;
+  margin-top: 110px;
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #003366;
+  font-weight: 800;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
+
+.aboutus-h1::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 4px;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+.aboutus-h1:hover::after {
+  width: 60%;
+}
+
+/* Text color change on hover */
+.aboutus-h1:hover {
+  color: #007bff;
+}
+
 
 .main-section {
     max-width: 1600px;
-    margin: 0 auto; /* center horizontally */
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -229,3 +256,9 @@ nav ul li a:hover {
   font-size: 14px;
 }
 
+.socials{
+  display: flex;
+}
+.socials li {
+ padding-inline: 5px;
+}
