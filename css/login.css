@@ -57,10 +57,89 @@ nav ul li a:hover {
 }
 
 main h1{
-    margin-top: 150px;
+    margin-top: 250px;
     text-align: center;
     font-size: 40px;
 }
+
+
+.login-section {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+.login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #00b09b;
+      box-shadow: 0 0 0 3px rgba(0, 176, 155, 0.2);
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #00b09b;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      background-color: #009688;
+    }
+
+    .bottom-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .bottom-text a {
+      color: #00b09b;
+      text-decoration: none;
+    }
+
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
 
 
 
