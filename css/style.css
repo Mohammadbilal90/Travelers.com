@@ -282,68 +282,6 @@ nav ul li a:hover {
     padding-bottom: 100px;
  }
 
- /* .contact-section {
-    background-color: rgb(12, 60, 96);
-}
-
-.contact-h1 {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 200;
-    text-align: center;
-    padding-top: 30px;
-}
-.contact-form-left {
-    padding-left: 600px;
-}
-.contact-section label {
-    color: #fff;
-}
-.contact-section input {
-    background-color: rgb(12, 60, 96);
-    border: none; 
-    border-bottom: 1px solid #fff; 
-    color: white; 
-    padding: 5px 0; 
-    width: 100%; 
-    outline: none; 
-    width: 350px;
-}
-.contact-form-right{
-    margin-left: 20px;
-}
-.messege{
-    background-color: rgb(12, 60, 96);
-}
-.messege input {
-     background-color: rgb(12, 60, 96);
-    border: none; 
-    border-bottom: 1px solid #fff; 
-    color: white; 
-    padding: 5px 0; 
-    width: 100%; 
-    outline: none; 
-    width: 634px;
-}
-.messege label {
-    color: #fff; 
-    margin-left: 600px;
-}
-.messege button{
-    margin-top: 40px;
-    margin-left: 854px;
-    padding: 10px 85px;
-    background-color: rgb(12, 60, 96);
-    color: #ffffff;
-}
-.messege button:hover{
-    background-color: rgb(12, 105, 175);
-    transition: 0.5s;
-}
-.messege button a{
-    text-decoration: none;   
-}  */
-
 .contact-section {
   background-color: rgb(12, 60, 96);
   padding: 50px 20px;
@@ -357,16 +295,16 @@ nav ul li a:hover {
   margin-bottom: 40px;
 }
 
-/* Grid layout - 2 columns */
+
 .contact-form-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto 30px auto;
 }
 
-/* Each input group */
+
 .contact-group {
   display: flex;
   flex-direction: column;
@@ -397,7 +335,6 @@ nav ul li a:hover {
   border-color: #00d9ff;
 }
 
-/* Submit button styles */
 .btn-submit {
   margin-top: 20px;
 }
@@ -492,4 +429,191 @@ header {
 nav {margin-left: 0;}
 nav ul li i{
 margin-inline:7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .logo {
+    padding: 10px 50px;
+  }
+
+  nav ul {
+    padding-inline-end: 100px;
+  }
+
+  .bg-text {
+    width: 90%;
+  }
+
+  .parallex-text {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .more-info {
+    margin-inline-start: 50px;
+  }
+
+  .footer-container {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo {
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  nav ul li {
+    padding: 10px 0;
+  }
+
+  .first-section {
+    height: 500px;
+  }
+
+  .bg-text h1 {
+    font-size: 40px;
+  }
+
+  .bg-text h3 {
+    font-size: 20px;
+  }
+
+  .ser-pro h1 {
+    font-size: 28px;
+  }
+
+  .three-cards {
+    margin: 0;
+  }
+
+  .parallex-text {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .four-clients {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .four-clients h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact-form-container {
+    grid-template-columns: 1fr; /* Already present */
+  }
+
+  .test-h1 h1 {
+    font-size: 28px;
+    padding-top: 50px;
+  }
+
+  .test-text p {
+    font-size: 16px;
+  }
+
+  .test-text h4 {
+    font-size: 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .bg-text h1 {
+    font-size: 30px;
+  }
+
+  .bg-text h3 {
+    font-size: 16px;
+  }
+
+  .bg-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .parallex-text button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  .btn-submit button {
+    width: 100%;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center;
+  }
 }
