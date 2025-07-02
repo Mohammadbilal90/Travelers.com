@@ -280,13 +280,12 @@ nav ul li a:hover {
 }
 .test-section {
     padding-bottom: 100px;
-}
-.contact-section {
+ }
+
+ /* .contact-section {
     background-color: rgb(12, 60, 96);
 }
-.contact-forms {
-    display: flex;
-}
+
 .contact-h1 {
     color: #fff;
     font-size: 40px;
@@ -343,12 +342,92 @@ nav ul li a:hover {
 }
 .messege button a{
     text-decoration: none;   
+}  */
+
+.contact-section {
+  background-color: rgb(12, 60, 96);
+  padding: 50px 20px;
+  text-align: center;
 }
-.map img{
-    width: 1000px;
-    height: 300px;
-    margin-left:  25.5%;
-    margin-top: 5%;
+
+.contact-h1 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+/* Grid layout - 2 columns */
+.contact-form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+/* Each input group */
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contact-group label {
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 300;
+}
+
+.contact-group input {
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-group input::placeholder {
+  color: #ccc;
+}
+
+.contact-group input:focus {
+  border-color: #00d9ff;
+}
+
+/* Submit button styles */
+.btn-submit {
+  margin-top: 20px;
+}
+
+.btn-submit button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background-color: #fff;
+  color: rgb(12, 60, 96);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-submit button:hover {
+  background-color: rgb(0, 174, 255);
+  color: #fff;
+}
+
+/* Responsive layout on small screens */
+@media (max-width: 768px) {
+  .contact-form-container {
+    grid-template-columns: 1fr; /* stack vertically */
+  }
+}
+
+.btn-submit a {
+  text-decoration: none;
+  color: rgb(12, 60, 96);
 }
 
 .footer {
