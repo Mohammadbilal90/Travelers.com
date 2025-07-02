@@ -142,10 +142,6 @@ main h1{
     }
 
 
-
-
-
-
 .footer {
   background-color: #06243a;
   color: #fff;
@@ -198,3 +194,86 @@ main h1{
 .socials li {
  padding-inline: 5px;
 }
+
+
+
+    .signup-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .signup-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #2193b0;
+      box-shadow: 0 0 0 3px rgba(33, 147, 176, 0.2);
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #2193b0;
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .signup-btn:hover {
+      background-color: #1b7ea0;
+    }
+
+    .bottom-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .bottom-text a {
+      color: #2193b0;
+      text-decoration: none;
+    }
+
+    .bottom-text a:hover {
+      text-decoration: underline;
+    }
+
+    .sign-up{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 300px;
+        padding-top: 30px;
+    }
+    .signh1{
+        margin-top: 250px;
+    }
