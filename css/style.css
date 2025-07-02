@@ -418,10 +418,10 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* Responsive layout on small screens */
+
 @media (max-width: 768px) {
   .contact-form-container {
-    grid-template-columns: 1fr; /* stack vertically */
+    grid-template-columns: 1fr; 
   }
 }
 
