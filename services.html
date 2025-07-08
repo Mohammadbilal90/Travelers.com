@@ -16,7 +16,14 @@
         <div class="logo">
             <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
-        <nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -38,77 +45,77 @@
                         for both domestic and international flights.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🏨 Hotel Reservations</h3>
                     <p>Find the perfect stay! From budget hostels to 5-star luxury hotels
-                         — all hand-picked by travel experts.</p>
+                        — all hand-picked by travel experts.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🚗 Car Rentals & Local Transport</h3>
-                    <p>Hassle-free transport solutions including airport pickups, private cabs, 
+                    <p>Hassle-free transport solutions including airport pickups, private cabs,
                         and self-drive car rentals.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>📦 Custom Travel Packages</h3>
-                    <p>Let us plan your dream vacation! Honeymoons, family trips, adventure tours 
+                    <p>Let us plan your dream vacation! Honeymoons, family trips, adventure tours
                         — all tailor-made for you.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🧭Tour Guide</h3>
                     <p>Discover more with expert-guided city tours, desert safaris,
-                         mountain hikes and cultural experiences.</p>
+                        mountain hikes and cultural experiences.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🛫 Flight Booking</h3>
                     <p>We offer the best airfare deals with real-time booking support
                         for both domestic and international flights.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🛂 Visa Assistance</h3>
                     <p>Fast and reliable visa services for multiple countries,
-                         with complete documentation support.</p>
+                        with complete documentation support.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>🛡️ Travel Insurance</h3>
                     <p>Stay protected while you travel. Affordable insurance plans
-                         for emergencies, cancellations & more.</p>
+                        for emergencies, cancellations & more.</p>
                 </div>
             </div>
             <div class="our-services">
                 <div class="services">
                     <h3>🕌 Religious Tours</h3>
                     <p>Plan spiritually meaningful journeys such as Umrah, Hajj,
-                         or other religious pilgrimages with ease.</p>
+                        or other religious pilgrimages with ease.</p>
                 </div>
             </div>
             <div class="our-services">
                 <div class="services">
                     <h3>🌐 Group & Corporate Travel</h3>
                     <p>Special packages for office teams, student trips, or large
-                         family vacations with group discounts.</p>
+                        family vacations with group discounts.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>📸 Photography Tours</h3>
-                    <p>Join professional-led tours to the world’s most scenic destinations designed for 
+                    <p>Join professional-led tours to the world’s most scenic destinations designed for
                         photography lovers.</p>
                 </div>
             </div>
-             <div class="our-services">
+            <div class="our-services">
                 <div class="services">
                     <h3>📱24/7 Customer support</h3>
                     <p>Traveling abroad? We’re just a call or message away — anytime, anywhere.</p>
@@ -117,7 +124,7 @@
         </section>
     </main>
 
-     <footer class="footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-column">
                 <h3>Address</h3>
@@ -147,6 +154,15 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

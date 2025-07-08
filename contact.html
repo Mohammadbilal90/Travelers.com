@@ -12,15 +12,22 @@
 </head>
 
 <body>
-    <header>
+   <header>
         <div class="logo">
             <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
-        <nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Projects</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><i class="fa-solid fa-circle-user"></i><a href="login.html">Log In</a></li>
@@ -102,6 +109,13 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
+    <script>
+    const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu').querySelector('ul');
 
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  </script>
 </body>
 </html>

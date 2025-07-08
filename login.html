@@ -16,7 +16,14 @@
         <div class="logo">
             <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
-        <nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -79,14 +86,21 @@
                     <li><i class="fa-brands fa-square-twitter"></i></li>
                 </ul>
             </div>
-    
+
         </div>
     </footer>
 
     <div class="footer-bottom">
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
 
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
