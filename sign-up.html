@@ -16,7 +16,14 @@
         <div class="logo">
             <h1><a href="index.html">TRAVELERS</a></h1>
         </div>
-        <nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav id="navMenu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -31,9 +38,9 @@
         <section>
             <h1 class="signh1">Sign up</h1>
         </section>
-    
-    
-    
+
+
+
         <section class="sign-up">
             <div class="signup-container">
                 <h2>Create Your Account</h2>
@@ -92,6 +99,14 @@
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

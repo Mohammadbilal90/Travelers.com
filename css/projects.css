@@ -1,60 +1,92 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
-header{
-    background-color: rgb(12, 60, 96);
-    position: fixed;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    color: #fff;   
-    display: flex; 
-    z-index: 1;
-}
-.logo{
-    padding: 10px 80px;
-    font-size: 19px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 300;
-}
-nav{
-    display: flex;
+
+header {
     justify-content: space-between;
-    align-items: center;
-    margin-left: 30%;
+    padding-inline-end: 220px;
 }
-a {
-    text-decoration: none;
-    color: #fff;
-    transition: all 0.3s ease;
+header {
+  background-color: rgb(12, 60, 96);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  padding-inline-start: 220px;
+  position: relative;
+  z-index: 1000;
 }
-
-nav ul{
-    display: flex;
-    list-style: none;
+.logo a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 35px;
+  text-decoration: none;
 }
-nav ul li{
-    padding: 10px 20px;
-    display: block;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
 }
-
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
 nav ul li a:hover {
-    color: #ffd700;
-    border-bottom: 1px solid #ffd700;
-    transition: all 0.5s ease;
+  color: #ffd700;
+  border-bottom: 1px solid #ffd700;
 }
 
+/* Hamburger Style */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
 
-.logo a:hover {
-    color: #00d9ff;
-    text-shadow: 0 0 5px #00d9ff;
-    transition: all 0.3s ease;
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 1024px) {
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgb(12, 60, 96);
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  nav ul.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+
+  nav {
+    margin-left: 0;
+  }
 }
 
 .project-h1 {
