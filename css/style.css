@@ -540,15 +540,6 @@ margin-inline:7px;
 
 
 
-
-
-
-
-
-
-
-
-
 @media (max-width: 1024px) {
   .logo {
     padding: 10px 50px;
@@ -576,20 +567,6 @@ margin-inline:7px;
     justify-content: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
   header {
@@ -671,17 +648,6 @@ margin-inline:7px;
     margin-left: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 480px) {
