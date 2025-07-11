@@ -11,6 +11,7 @@ body {
 
 
 header {
+  padding: 0px 20px;
   position: fixed; 
   top: 0;
   width: 100%;
@@ -20,7 +21,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  padding-inline-start: 220px;
+  padding-inline-start: 20px;
   z-index: 1000;
 }
 
@@ -91,28 +92,7 @@ nav ul li a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* header end */
 
 .first-section{
     background: url(../assets/images/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.avif) no-repeat;
@@ -419,7 +399,7 @@ nav ul li a:hover {
 .footer {
   background-color: #06243a;
   color: #fff;
-  padding: 40px 20px;
+  padding: 40px 90px;
 }
 .footer-container {
   display: flex;
@@ -427,7 +407,7 @@ nav ul li a:hover {
   justify-content: space-evenly;
   max-width: auto;
   margin: 0 auto;
-  margin-left: 450px;
+  margin-left: 0px;
 }
 .footer-column {
   flex: 1 1 200px;
