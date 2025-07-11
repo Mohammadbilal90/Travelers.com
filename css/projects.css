@@ -12,14 +12,18 @@ header {
     justify-content: space-between;
     padding-inline-end: 220px;
 }
+
 header {
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out; 
   background-color: rgb(12, 60, 96);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
   padding-inline-start: 220px;
-  position: relative;
   z-index: 1000;
 }
 .logo a {

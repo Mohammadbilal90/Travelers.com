@@ -109,13 +109,33 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
-    <script>
-    const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('navMenu').querySelector('ul');
 
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
-  </script>
+   <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scrolling down
+                navbar.style.top = "-100px"; // hide navbar (adjust height if needed)
+            } else {
+                // scrolling up
+                navbar.style.top = "0"; // show navbar
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative values
+        });
+    </script>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu').querySelector('ul');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
