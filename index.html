@@ -212,6 +212,25 @@
         <p>&copy; 2025 Centric.dxb All rights reserved.</p>
     </div>
 
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector("header");
+
+        window.addEventListener("scroll", function () {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > lastScrollTop) {
+                // scrolling down
+                navbar.style.top = "-100px"; // hide navbar (adjust height if needed)
+            } else {
+                // scrolling up
+                navbar.style.top = "0"; // show navbar
+            }
+
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // avoid negative values
+        });
+    </script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.js"></script>
 </body>
