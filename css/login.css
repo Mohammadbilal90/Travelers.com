@@ -10,7 +10,7 @@ body {
 
 header {
     justify-content: space-between;
-    padding-inline-end: 220px;
+    padding: 10px 20px;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  padding-inline-start: 220px;
+  padding-inline-start: 20px;
   z-index: 1000;
 }
 .logo a {
@@ -82,6 +82,7 @@ nav ul li a:hover {
   .hamburger {
     display: flex;
     justify-content: flex-end;
+    padding-left: 100px;
   }
 
   .logo {
