@@ -94,102 +94,155 @@ nav ul li a:hover {
 
 /* header end */
 
-.first-section{
-    background: url(../assets/images/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.avif) no-repeat;
-        background-size: cover;
-        object-fit: cover;
-        height: 750px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        background-position: center;
-}
 
-.bg-img img{
 
-    position: relative;
-    background-position: center;
+
+.first-section {
+    background: url(../assets/images/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.avif) no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.bg-text{
-    
-    background: #fff;
-    width:835px;
-    height: 250px;
-    text-align: center;
-    margin: 0 auto;
-    
-}
-.bg-text h1{
-    color: #000;
-    font-size: 70px;
-    font-weight: 100;
-}
-.bg-text h3{
-    padding-top: 20px;
-    color: #000;
-    font-weight: 200;
-    font-size: 26px;
-}
-.bg-btn{
-    padding: 15px 40px;
-    background: #fff;
-    font-size: 15px;
-    border: 1px solid #000;
-    font-size: 17px;
-    border-radius: 5px;
-}
-.bg-img button:hover{
-    background-color: rgb(12, 60, 96);
-    color: #fff;
-    transition: 0.7s;
-    border: 1px solid#000;
-}
-.all-three-cards{
-    /* border-top: 1px solid#000; */
-    padding-top: 50px;
-}
-.ser-pro{
+    height: 750px;
     display: flex;
     justify-content: center;
-}
-.ser-pro h1{
-    text-align: center;
-    padding:   50px;
-    font-size: 40px;
-    color: #000;
-    font-weight: 200;
-}
-.ser-pro p{
-    text-align: center;
-    line-height: 32px;
-    font-weight: 100;
-}
-.three-cards{
     align-items: center;
-    margin: 0 50px ;
-    width: 100%;
-    height: auto;
+    padding: 0 15px;
 }
-.more-info {
-    margin-top: 50px;
-    margin-inline-start:  200px;
-}
-.more-info button {
-    padding: 15px 48px;
+
+.bg-text {
     background: #fff;
-    font-size: 16px;
-    border: 1px solid#000;
-    border-radius: 5px;
-    margin-bottom: 150px;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 92%;
 }
-.more-info button:hover{
+
+.bg-text h1 {
+    color: #000;
+    font-size: 56px;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+.bg-text h3 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.bg-btn {
+    padding: 12px 32px;
+    background: #fff;
+    font-size: 17px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bg-btn:hover {
     background-color: rgb(12, 60, 96);
     color: #fff;
     transition: 0.7s;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .first-section {
+        height: auto;
+        padding: 60px 15px;
+    }
+
+    .bg-text h1 {
+        font-size: 36px;
+    }
+
+    .bg-text h3 {
+        font-size: 18px;
+    }
+
+    .bg-btn {
+        font-size: 16px;
+        padding: 10px 24px;
+    }
+}
+
+
+
+
+
+.all-three-cards {
+    padding-top: 50px;
+}
+
+.ser-pro {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.ser-pro h1 {
+    padding: 30px 0 10px;
+    font-size: 36px;
+    color: #000;
+    font-weight: 600;
+}
+
+.ser-pro p {
+    line-height: 28px;
+    font-weight: 300;
+    padding: 0 10px;
+}
+
+.three-cards {
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.more-info {
+    margin-top: 30px;
+}
+
+.more-info button {
+    padding: 12px 32px;
+    background: #fff;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.more-info button:hover {
+    background-color: rgb(12, 60, 96);
+    color: #fff;
+    transition: 0.7s;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .three-cards {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .three-cards {
+        max-width: 30%;
+    }
+
+    .more-info {
+        margin-inline-start: 0;
+    }
+}
+
+
+
 
 .parallex-img {
  background: url('../assets/images/parallex-image.avif') no-repeat;
