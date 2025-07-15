@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: flex;
     font-size: 23px;
     color: #fff;
-    /* margin-inline-start: 400px; */
+    margin-inline-start: auto;
     display: flex;
     justify-content: flex-end
     ;
@@ -146,7 +146,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   .first-section {
     height: auto;
-    padding: 60px 15px;
+    padding-top: 300px;
   }
 
   .bg-text h1 {
@@ -424,8 +424,8 @@ nav ul li a:hover {
 /* Additional Responsive Tweaks */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
     text-align: center;
+  
   }
 
   .four-clients {
