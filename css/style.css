@@ -43,7 +43,7 @@ nav ul li a:hover {
   border-bottom: 1px solid #ffd700;
 }
 
-/* Hamburger Style */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -57,7 +57,7 @@ nav ul li a:hover {
   border-radius: 2px;
 }
 
-/* Mobile Nav Toggle */
+
 @media (max-width: 1024px) {
   nav ul {
     flex-direction: column;
@@ -90,7 +90,7 @@ nav ul li a:hover {
   }
 }
 
-/* Banner Section */
+
 .first-section {
   background: url(../assets/images/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.avif) no-repeat center center;
   background-size: cover;
@@ -111,7 +111,6 @@ nav ul li a:hover {
   border-radius: 10px;
   border-bottom-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  /* margin-top: 92%; */
 }
 
 .bg-text h1 {
