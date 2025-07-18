@@ -99,6 +99,7 @@ nav ul li a:hover {
   justify-content: center;
   align-items: end;
   padding: 0 15px;
+  
 }
 
 .bg-text {
@@ -248,7 +249,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 60px;
   color: #000;
-  background-color: rgba(175, 175, 175, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 12px;
 }
 .parallex-text button {
