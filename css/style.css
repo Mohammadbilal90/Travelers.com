@@ -283,6 +283,7 @@ nav ul li a:hover {
   margin-top: 50px;
   flex-wrap: wrap;
   gap: 20px;
+  padding-inline: auto;
 }
 .four-clients h1 {
   font-size: 30px;
@@ -385,7 +386,7 @@ nav ul li a:hover {
 .footer {
   background-color: #06243a;
   color: #fff;
-  padding: 40px 90px;
+  padding: 20px 20px;
 }
 .footer-container {
   display: flex;
@@ -425,11 +426,12 @@ nav ul li a:hover {
 @media (max-width: 768px) {
   header {
     text-align: center;
-  
   }
 
   .four-clients {
     flex-direction: column;
+        padding: 10px 60px;
+
   }
 
   .parallex-text,
@@ -449,11 +451,13 @@ nav ul li a:hover {
 
   .footer-container {
     flex-direction: column;
-    align-items: center;
+    text-align: start;
+
   }
 }
 
 @media (max-width: 480px) {
+ 
   .bg-text h1 {
     font-size: 30px;
   }
@@ -470,6 +474,7 @@ nav ul li a:hover {
   }
 
   .footer-column {
-    text-align: center;
+    text-align: start;
+    padding: 0 auto;
   }
 }
